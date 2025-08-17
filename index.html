@@ -1,21 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navaneeth Kaku - Profile</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-        h1 { color: darkblue; }
-        h2 { color: darkgreen; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navaneeth Kaku - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #fff;
+    }
+    section {
+      padding: 60px;
+      text-align: center;
+    }
+    h1, h2, h3 {
+      margin-bottom: 20px;
+    }
+    p {
+      max-width: 800px;
+      margin: 10px auto;
+      font-size: 18px;
+    }
+    /* 5 colors */
+    #home { background: #1abc9c; }       /* teal */
+    #about { background: #3498db; }      /* blue */
+    #skills { background: #9b59b6; }     /* purple */
+    #projects { background: #e67e22; }   /* orange */
+    #contact { background: #e74c3c; }    /* red */
+    nav {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      background: #222;
+      padding: 15px;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: yellow;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 8px 0;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 15px auto;
+      max-width: 700px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello 👋, I'm Navaneeth Kaku</h1>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Section 1 -->
+  <section id="home">
+    <h1>Hello 👋, I'm <span style="color:yellow">Navaneeth Kaku</span></h1>
     <h2>B.Tech Student | Aspiring Data Analyst</h2>
-    <p>Currently studying at Garden City University, Bangalore (2026 Batch).</p>
-    <p>Skills: Python, Data Analysis, SQL, Excel</p>
-    <p>Contact: navaneethkaku@gmail.com</p>
+    <p>Currently studying at <strong>Garden City University, Bangalore (2026 Batch)</strong>. Passionate about using data to uncover insights and drive decisions.</p>
+  </section>
+
+  <!-- Section 2 -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I am an enthusiastic learner, curious about data-driven technologies. My focus is on building a strong foundation in Python, SQL, and data visualization. Apart from academics, I enjoy solving real-world problems and continuously learning new skills.</p>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <ul>
+        <li>Python (Data Analysis, Pandas, NumPy)</li>
+        <li>SQL (Joins, Queries, Databases)</li>
+        <li>Microsoft Excel (Pivot Tables, Charts, Dashboards)</li>
+        <li>Data Visualization (Matplotlib, Seaborn)</li>
+        <li>Problem-Solving & Logical Thinking</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section 4 -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>1. E-commerce Data Analysis</h3>
+      <p>Analyzed sales data to extract monthly revenue, product-wise sales, and customer insights. Exported clean datasets and created visual dashboards.</p>
+    </div>
+    <div class="card">
+      <h3>2. Weather Forecast Android App</h3>
+      <p>Built using Java, Android Studio, and OpenWeatherMap API. Shows real-time weather updates based on GPS location.</p>
+    </div>
+    <div class="card">
+      <h3>3. Netflix Movies Analysis</h3>
+      <p>Performed exploratory data analysis on Netflix dataset by genre, release year, and duration to identify viewing trends.</p>
+    </div>
+  </section>
+
+  <!-- Section 5 -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:navaneethkaku@gmail.com" style="color:yellow;">navaneethkaku@gmail.com</a></p>
+      <p>Location: Bangalore, India</p>
+      <p>Phone: 8919318298</p>
+      <p>LinkedIn: <a href="https://linkedin.com" target="_blank" style="color:yellow;">My Profile</a></p>
+      <p>GitHub: <a href="https://github.com/navaneethyadav" target="_blank" style="color:yellow;">github.com/navaneethyadav</a></p>
+    </div>
+  </section>
+
 </body>
 </html>
 
